@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CV</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Example webpage to learn HTML">
+    <meta name="keywords" content="HTML, CSS, images, cv">
+    <meta name="author" content="Diana">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    @media (min-width: 40em) {
+        .grid-even-columns {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+        position: relative;
+        padding: 0px;
+        margin: 20px;
+    }
+
+    .icons img {
+        width: 70px;
+    }
+</style>
+
+<body class="cv">
+
+    <nav class="navCV">
+        <ul>
+            <li><a target="_blank" href="about.html">about</a></li>
+            <!--  target="_blank" makes it open in a new tab -->
+            <li><a target="_blank" href="contact.html">contact</a></li>
+            <li><a target="_blank" href="gallery.html">photos</a></li>
+            <li><a target="_blank" href="index.html">welcome</a></li>
+        </ul>
+    </nav>
+
+    <div class="heading">
+        <h1>curriculum vitae</h1>
+    </div>
+
+    <div class="grid-even-columns">
+        <div class="gridItem1">
+            <h3>ABOUT ME</h3>
+            <p>Experienced in physical therapy and currently pursuing studies in informatics. I enjoy
+                continuous learning, working with people, and bringing creative
+                problem-solving into both healthcare and digital environments.
+            </p>
+            <img src="images/prof.pic.png" style="width:180px;">
+        </div>
+
+        <div class="gridItem2">
+            <h3>EDUCATION</h3>
+            <p>
+                <b>Bachelor of Science in Engineering</b><br>
+                IMC University of Applied Sciences<br>
+                2025 - ...
+            </p>
+            <p>
+                <b>Bachelor of Science in Health Sciences <br><i>cum laude</i></b><br>
+                Tartu Applied Health Sciences University<br>
+                2020-2025<br>
+            </p>
+            <p>
+                <b>Upper secondary education</b><br>
+                Rapla Ühisgümnaasium<br>
+                2019
+            </p>
+
+
+        </div>
+
+        <div class="gridItem3">
+            <article>
+                <h3>ADDITIONAL COURSES</h3>
+                <ul style="text-align: left;">
+                    <li>
+                        <p> Inspiratory Muscle Training (2024)</p>
+                    </li>
+                    <li>
+                        <p>Common Musculoskeletal Problems (2024)</p>
+                    </li>
+                    <li>
+                        <p>Software Testing Course (2023)</p>
+                    </li>
+                    <li>
+                        <p>Evidence-Based Kinesio Taping (2021)</p>
+                    </li>
+                    <li>
+                        <p>The Science of Exercise (2020)</p>
+                    </li>
+                </ul>
+            </article><br>
+
+        </div>
+
+        <div class="gridItem4">
+            <h3>LANGUAGE SKILLS</h3>
+            <p>Estonian</p>
+            <div class="container5">
+                <div class="est">100%</div>
+            </div>
+
+            <p>English</p>
+            <div class="container5">
+                <div class="eng">80%</div>
+            </div>
+
+            <p>Russian</p>
+            <div class="container5">
+                <div class="rus">65%</div>
+            </div>
+
+            <p>German</p>
+            <div class="container5">
+                <div class="ger">60%</div>
+            </div>
+        </div>
+
+        <footer>
+            <pre><br>
+Diana Tall. talldiana4@gmail.com +4373737373
+        </pre>
+        </footer>
+
+</body>
+
+</html>

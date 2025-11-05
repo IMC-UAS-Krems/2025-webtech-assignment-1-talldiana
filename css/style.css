@@ -1,0 +1,458 @@
+/* WELCOME PAGE */
+
+body.index {
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    background: linear-gradient(to bottom right, #5f7ca4, #c3d9ef);
+    /* makes a cool fading effect */
+}
+
+
+.font1 {
+    color: #0d2f4f;
+    font-family: "Notable", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.font2 {
+    color: #0d2f4f;
+    font-family: "Notable", sans-serif;
+    font-style: normal;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.nav1 ul {
+    list-style: none;
+    display: flex;
+    /* make list items line up horizontally */
+    justify-content: flex-end;
+    gap: 0px;
+    margin: 0;
+    padding: 20px;
+    height: 120px;
+}
+
+
+.nav1 li a {
+    font-family: "Notable", sans-serif;
+    padding: 10px 10px;
+    display: inline-block;
+    text-decoration: none;
+    /* to make sure it bounces, it has to be lnline/block, bevause its in a head https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/display*/
+}
+
+.nav1 li a:visited {
+    color: #03325e57;
+}
+
+.nav1 li a:hover {
+    color: #ffffff;
+    animation: bounce 0.7s ease;
+    /* making text bounce when you hover over it*/
+}
+
+
+/* this is an animation*/
+@keyframes bounce {
+    30% {
+        transform: translateY(-8px);
+    }
+}
+
+.container {
+    position: fixed;
+    color: #0d2f4f;
+    border: #0d2f4f;
+}
+
+.paragraph1,
+.paragraph2 p {
+    color: #0d2f4f;
+    font-size: 18px;
+    line-height: 1.3;
+    max-width: 200;
+}
+
+.profilePicture {
+    border-radius: 50%;
+    /* makes the photo round */
+
+    margin: 0 0 1rem 1rem;
+    object-fit: cover;
+
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+
+img.profilePicture:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    font-family: monospace;
+    padding: 5px;
+    text-align: center;
+
+}
+
+
+
+/* FOR FOR THE FORM*/
+body.contact {
+    background: linear-gradient(to bottom, #966082, #ffffff);
+    padding: 00px;
+    margin: 0px;
+}
+
+.fixed-box {
+    background-color: #f7f3ee;
+    position: fixed;
+    top: 38px;
+
+}
+
+.form {
+    padding: 50px;
+    margin: 10px;
+    border: rgb(255, 255, 255) solid 10px;
+    border-radius: 20px;
+    text-align: justify;
+    width: 600px;
+    justify-content: center;
+    margin-left: 300px;
+}
+
+
+
+.form h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.header2 {
+    background-image: url(../images/samurai_hor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px;
+    text-align: center;
+}
+
+.header2 h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+}
+
+.fixed-box {
+    background-color: #f7f3ee;
+    position: fixed;
+    top: 38px;
+    right: 0px;
+    padding: 20px;
+}
+
+.nav2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* space btween links */
+    padding: 0px;
+    margin: 10px;
+    color: rgb(245, 242, 243);
+}
+
+.nav2 ul a {
+    padding: 7px;
+    text-decoration: none;
+}
+
+.nav2 ul a:visited {
+    color: rgb(70, 10, 70)
+}
+
+.nav2 ul a:hover {
+    color: white;
+}
+
+button {
+    color: rgb(239, 235, 239);
+    background-color: rgb(61, 7, 61);
+    padding: 10px 52px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 9px;
+    border: solid;
+}
+
+/* NOW FOR THE ABOUT */
+
+body.about {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor */
+    cursor: url(/images/kingbounty.cur), auto;
+
+}
+
+.nav3 {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+
+.nav3 ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    /* move them to the right */
+    gap: 30px;
+    color: white;
+    padding: 0px;
+    margin: 0;
+    height: 20px;
+}
+
+.nav3 ul a {
+    text-decoration: none;
+}
+
+.header3 {
+    /* if i use lenght the h1 goes too uo */
+    padding: 130px;
+    text-align: center;
+    background-image: url(../images/kiddo2.jpeg);
+    background-position: center;
+    background-size: cover;
+    /* has to be cover bcause otherwise when i readjust the screen size the header wouldnt stick */
+    background-attachment: scroll;
+    color: white;
+    position: relative;
+    /* needed this because i wanted to add a nav bar in a header */
+    font-family: "Outfit", sans-serif;
+}
+
+.header3 h1 {
+    font-size: 50px;
+}
+
+.header3 li a:visited {
+    color: rgb(113, 28, 28);
+}
+
+.row3 {
+    display: flex;
+
+}
+
+
+
+.side3 {
+    background-color: #f8a06691;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items:center;
+}
+
+.side3 img {
+}
+
+.stats {
+    margin: 20px;
+    text-align: justify;
+}
+
+table {
+    color: rgb(113, 28, 28);
+    text-align: justify;
+}
+
+.main3 {
+    background-color: white;
+    padding: 30px;
+    padding-top: 0;
+    color: rgb(113, 28, 28);
+    font-size: 20px;
+}
+
+.footer {
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    background: #f8a06691;
+    color: rgb(113, 28, 28)
+}
+
+/* NOW FOR THE GALLERY */
+
+.gallery h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 32px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(168, 144, 127);
+}
+
+nav.gallery ul {
+    /* make list items line up horizontally, must be in ul not li */
+    justify-content: flex-end;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: flex;
+    gap: 29px;
+    list-style: none;
+}
+
+nav.gallery li a {
+    color: rgb(168, 144, 127);
+    text-decoration: none;
+}
+
+gallery li a:visited {
+    color: #566d61
+}
+
+nav.gallery li:hover {
+    animation: bounce 3s;
+    color: rgb(12, 14, 6)
+}
+
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3px;
+}
+
+/* create four equal columns that sits next to each other */
+.column4 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 3px;
+}
+
+.column4 img {
+    margin-top: 6px;
+    vertical-align: middle;
+    border-radius: 15%;
+}
+
+footer.gallery {
+    color: rgb(168, 144, 127);
+}
+
+body.gallery {
+    background-color: rgba(33, 38, 16)
+}
+
+
+
+/* NOW FOR THE CV */
+
+body.cv {
+    background-color: rgb(18, 32, 72);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.grid-even-columns {
+    display: grid;
+    gap: 1rem;
+    background-color: rgb(247, 247, 232);
+    margin: 0px;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+    text-align: justify;
+}
+
+.grid-even-columns>div:nth-child(2),
+.grid-even-columns>div:nth-child(3) {
+    margin: 10px;
+    padding: 20px;
+
+}
+
+.grid-even-columns>div:nth-child(1),
+.grid-even-columns>div:nth-child(4) {
+    background-color: rgb(190, 190, 219);
+    margin: 10px;
+    padding: 20px;
+}
+
+.heading {
+    color: rgb(190, 190, 219);
+    padding: 30px;
+}
+
+.navCV ul {
+    color: rgb(190, 190, 219);
+    list-style: none;
+    justify-content: flex-end;
+    display: flex;
+    gap: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    margin: 50px;
+}
+
+.navCV a:link {
+    color: rgb(190, 190, 219);
+    text-decoration: none;
+}
+
+.navCV a:visited {
+    color: rgb(108, 108, 164);
+    font-weight: bold;
+}
+
+.navCV a:hover {
+    color: rgb(255, 141, 54);
+}
+
+.container5 {
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.est {
+    width: 100%;
+    background-color: rgb(255, 141, 54);
+}
+
+.eng {
+    width: 80%;
+    background-color: rgb(255, 141, 54);
+}
+
+.rus {
+    width: 60%;
+    background-color: rgb(255, 141, 54);
+}
+
+.ger {
+    width: 30%;
+    background-color: rgb(255, 141, 54);
+}

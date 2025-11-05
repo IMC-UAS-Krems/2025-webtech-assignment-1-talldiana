@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Example webpage to learn HTML">
+    <meta name="keywords" content="HTML, CSS, images">
+    <meta name="author" content="Diana">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* makes a two column-layout instead of four columns. https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+    @media screen and (max-width: 800px) {
+        .column4 {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column4 {
+            flex: 100%;
+            max-width: 100%;
+        }
+    }
+</style>
+
+<body class="gallery">
+    <header class="gallery">
+        <nav class="gallery">
+            <ul>
+                <li><a target="_blank" href="about.html">about</a></li>
+                <!--  target="_blank" makes it open in a new tab -->
+                <li><a target="_blank" href="contact.html">contact</a></li>
+                <li><a target="_blank" href="gallery.html">photos</a></li>
+                <li><a target="_blank" href="index.html">welcome</a></li>
+            </ul>
+        </nav>
+        <h1>Image gallery</h1>
+    </header>
+
+    <div class="container4">
+
+        <div class="column4">
+            <img src="images/bog.jpg" style="width:100%">
+            <img src="images/summer.jpg" style="width:100%">
+            <img src="images/roe.jpg" style="width:100%">
+            <img src="images/winterbog.jpg" style="width:100%">
+            <img src="images/korv.jpg" style="width:100%">
+        </div>
+
+        <div class="column4">
+            <img src="images/deer.jpg" style="width:100%">
+            <img src="images/sunsetbog.jpg" style="width:100%">
+            <img src="images/ounapuu.jpg" style="width:100%">
+            <img src="images/sai.jpg" style="width:100%">
+            <img src="images/sugismets.jpg" style="width:100%">
+            <img src="images/sourdough.jpg" style="width:100%">
+        </div>
+
+        <div class="column4">
+            <img src="images/sourdough.jpg" style="width:100%">
+            <img src="images/korv.jpg" style="width:100%">
+            <img src="images/winter.jpg" style="width:100%">
+            <img src="images/view.jpg" style="width:100%">
+            <img src="images/summer.jpg" style="width:100%">
+        </div>
+
+        <div class="column4">
+            <img src="images/puud.jpg" style="width:100%">
+            <a href="https://papertoilet.com/"><img src="/images/me.jpeg" style="width:100%"> </a>
+            <img src="images/sai.jpg" style="width:100%">
+            <img src="images/korv.jpg" style="width:100%">
+            <img src="images/deer.jpg" style="width:100%">
+        </div>
+    </div>
+
+    <footer class="gallery">
+        <h4 style="text-align: center;">did you find the secret link?</h4>
+    </footer>
+</body>
+
+</html>
